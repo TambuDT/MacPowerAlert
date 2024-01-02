@@ -2,6 +2,10 @@
 
 MacPowerAlert is a macOS application that monitors your Mac's battery status and notifies you when the battery is at 20% or 80%.
 
+## Why avoid discharging below 20% and charging above 80%
+
+Keeping your Mac's battery between 20% and 80% charge can help extend the battery's lifespan. Recharging the battery when it's around 20% and stopping the charge when it reaches 80% can reduce stress on the battery and slow down the aging process.
+
 ## Installation 
 
 Downlaod the app, copy to Applications folder, right click and select open, then select open anyway
@@ -26,10 +30,6 @@ To enable MacPowerAlert to start automatically with your Mac, follow these steps
 1. Launch the application.
 2. The app will start monitoring the battery status every minute.
 3. You'll receive notifications when the battery is at 20% or 80%.
-
-## Why avoid discharging below 20% and charging above 80%
-
-Keeping your Mac's battery between 20% and 80% charge can help extend the battery's lifespan. Recharging the battery when it's around 20% and stopping the charge when it reaches 80% can reduce stress on the battery and slow down the aging process.
 
 ## Contribute
 
