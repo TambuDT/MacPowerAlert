@@ -25,9 +25,7 @@ Keeping your Mac's battery between 20% and 80% charge can help extend the batter
 To enable MacPowerAlert to start automatically with your Mac, follow these steps:
 
 1. Go to "System Preferences" on your Mac.
-2. Select "Users & Groups."
-3. In the "Login Items" tab, add MacPowerAlert to the list of login items.
-4. Ensure the added application is checked in the "Hide" column.
+2. In the "Login Items" tab, add MacPowerAlert to the list of login items.
 
 ## Contribute
 
