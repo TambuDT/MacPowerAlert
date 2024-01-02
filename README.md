@@ -44,5 +44,4 @@ If you want to contribute to this project, follow these steps:
 ## Contact
 
 - Davide Tamburrelli - [tambu.dt@gmail.com](mailto:tambu.dt@gmail.com)
-- [Other Contacts or Social Media]
 
