@@ -7,19 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D36A49A52B44A9C5005E1573 /* MacPowerAlertApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36A49A42B44A9C5005E1573 /* MacPowerAlertApp.swift */; };
-		D36A49A72B44A9C5005E1573 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36A49A62B44A9C5005E1573 /* ContentView.swift */; };
 		D36A49A92B44A9C6005E1573 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D36A49A82B44A9C6005E1573 /* Assets.xcassets */; };
 		D36A49AC2B44A9C6005E1573 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D36A49AB2B44A9C6005E1573 /* Preview Assets.xcassets */; };
+		D36A49BA2B44B2B5005E1573 /* MacPowerAlertApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36A49B92B44B2B5005E1573 /* MacPowerAlertApp.swift */; };
+		D36A49BC2B44B2EA005E1573 /* BackgroundService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36A49BB2B44B2EA005E1573 /* BackgroundService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D36A49A12B44A9C5005E1573 /* MacPowerAlert.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MacPowerAlert.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		D36A49A42B44A9C5005E1573 /* MacPowerAlertApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacPowerAlertApp.swift; sourceTree = "<group>"; };
-		D36A49A62B44A9C5005E1573 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D36A49A82B44A9C6005E1573 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D36A49AB2B44A9C6005E1573 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D36A49AD2B44A9C6005E1573 /* MacPowerAlert.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MacPowerAlert.entitlements; sourceTree = "<group>"; };
+		D36A49B92B44B2B5005E1573 /* MacPowerAlertApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacPowerAlertApp.swift; sourceTree = "<group>"; };
+		D36A49BB2B44B2EA005E1573 /* BackgroundService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,10 +52,10 @@
 		D36A49A32B44A9C5005E1573 /* MacPowerAlert */ = {
 			isa = PBXGroup;
 			children = (
-				D36A49A42B44A9C5005E1573 /* MacPowerAlertApp.swift */,
-				D36A49A62B44A9C5005E1573 /* ContentView.swift */,
 				D36A49A82B44A9C6005E1573 /* Assets.xcassets */,
 				D36A49AD2B44A9C6005E1573 /* MacPowerAlert.entitlements */,
+				D36A49B92B44B2B5005E1573 /* MacPowerAlertApp.swift */,
+				D36A49BB2B44B2EA005E1573 /* BackgroundService.swift */,
 				D36A49AA2B44A9C6005E1573 /* Preview Content */,
 			);
 			path = MacPowerAlert;
@@ -101,6 +101,7 @@
 				TargetAttributes = {
 					D36A49A02B44A9C5005E1573 = {
 						CreatedOnToolsVersion = 15.1;
+						LastSwiftMigration = 1510;
 					};
 				};
 			};
@@ -139,8 +140,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D36A49A72B44A9C5005E1573 /* ContentView.swift in Sources */,
-				D36A49A52B44A9C5005E1573 /* MacPowerAlertApp.swift in Sources */,
+				D36A49BA2B44B2B5005E1573 /* MacPowerAlertApp.swift in Sources */,
+				D36A49BC2B44B2EA005E1573 /* BackgroundService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,7 +270,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"ASSETCATALOG_COMPILER_APPICON_NAME[sdk=macosx*]" = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = MacPowerAlert/MacPowerAlert.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -279,6 +283,9 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = MacPowerAlert;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -288,6 +295,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = TMBConsulinfo.MacPowerAlert;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -296,7 +304,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"ASSETCATALOG_COMPILER_APPICON_NAME[sdk=macosx*]" = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = MacPowerAlert/MacPowerAlert.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -306,6 +317,9 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = MacPowerAlert;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
